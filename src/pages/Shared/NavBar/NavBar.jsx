@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom';
 import icon from '../../../assets/icon.png'
 import { useContext } from 'react';
 import { AuthContext } from '../../../providers/AuthProvider';
-// Website logo, Website name, Home, All Toys, My Toys, Add A Toy, Blogs, and User profile picture.
+import profilePic from '../../../assets/profilePic/httpsi.ibb.co475KSW2salam-circle.png.png'
+
 const NavBar = () => {
   const { user, logOut } = useContext(AuthContext);
   const handleLogOut = () => {
@@ -14,15 +15,18 @@ const NavBar = () => {
   const navItems = <>
     <li><Link to='/'>Home</Link></li>
     <li><Link to='/allToys'>All Toys</Link></li>
-    <li><Link to='/myToys'>My Toys</Link></li>
     <li><Link to='/addToy'>Add A Toy</Link></li>
     <li><Link to='/blogs'>Blogs</Link></li>
-    {user?.email ? <>
-      <li><Link to='/bookedToys'>Booked Toys</Link></li>
+    {
+    user?.email ? <>
+      <li><Link to='/bookedToys'>My Toys</Link></li>
       <li><button onClick={handleLogOut}>Log Out</button></li>
+      <li><img style={{height:'95%' , width: '15%'}} src={profilePic} alt="" /></li>
     </>
       : <li><Link to='/login'>Login</Link></li>
     }
+    
+   
   </>
   return (
     <div className="navbar bg-sky-300 mt-8">
@@ -45,7 +49,6 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
       </div>
     </div>
 

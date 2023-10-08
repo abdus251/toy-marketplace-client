@@ -5,7 +5,7 @@ const BookedRow = ({booking, handleDelete,     handleBookingConfirm}) => {
 
 
 return (
-        <div className="overflow-x-auto ">
+        <div className="overflow-x-auto bg-gradient-to-r from-purple-300 to-pink-300">
         <table className="table">
           {/* head */}
           <thead>

@@ -3,7 +3,7 @@ import icon from '../../../assets/icon.png'
 const Footer = () => {
     return (
         <div>
-            <footer className="footer p-10 bg-base-200 text-base-content">
+            <footer className="footer p-10  bg-sky-300 text-base-content">
   <nav>
     <header className="footer-title">Services</header> 
     <a className="link link-hover">Branding</a> 
@@ -25,11 +25,11 @@ const Footer = () => {
     <a className="link link-hover">Cookie policy</a>
   </nav>
 </footer> 
-<footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
+<footer className="footer px-10 py-4 border-t  bg-sky-300 text-base-content border-base-300">
   <aside className="items-center grid-flow-col">
   <img style={{height:'30px'}} src={icon} alt="" />
-    <p><span className="text-green-600 font-bold ml-4">
-        Edu</span><span className="text-red-600 font-bold">Toy</span> <br/><span className='ml-4'> Providing Educational and Learning Toys since 2001</span></p>
+    <p><span className="text-3xl text-green-600 font-bold ml-4">
+        Edu</span><span className="text-3xl text-red-600 font-bold">Toy</span> <br/><span className='ml-4'> Providing Educational and Learning Toys since 2001</span></p>
   </aside> 
   <nav className="md:place-self-center md:justify-self-end">
     <div className="grid grid-flow-col gap-4">

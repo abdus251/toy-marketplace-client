@@ -53,8 +53,8 @@ const BookedToys = () => {
                 })
     }
     return (
-        <div className="">
-            <h1 className="my-8 text-5xl">Your bookings: {bookings.length}</h1>
+        <div className="bg-gradient-to-r from-purple-300 to-pink-300">
+            <h1 className="py-8 text-5xl">Your bookings: {bookings.length}</h1>
             <div className="overflow-x-auto text-left">
                 <table className="table">
                     <tbody>
